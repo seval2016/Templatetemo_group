@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+.navbar {
+  padding: 0;
+}
+
+p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+h2 {
+  color: rgb(53, 53, 53);
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  color: #454545;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.link-active {
+  background: #29ca8e;
+  color: #fff;
+}
+.nav-link:hover {
+  background: #29ca8e;
+  color: #fff;
+}
+
+.btn-outline-light {
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  transition: 0.5s;
+}
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption p {
+  color: #f9f9f9;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  padding: 5px 0 40px 0;
+}
+
+.carousel-caption h3 {
+  font-size: 3rem;
+}
+
+
+@media (min-width: 992px) {
+  .carousel-inner {
+    height: 650px;
+  }
+
+}
+
