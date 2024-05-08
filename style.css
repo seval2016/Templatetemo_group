@@ -24,6 +24,10 @@ h3 {
   margin-bottom: 0px;
 }
 
+h3, h3 a {
+  color: #454545 !important;
+}
+
 .navbar-brand {
   color: #454545;
   font-size: 18px;
@@ -66,74 +70,234 @@ h3 {
   font-size: 3rem;
 }
 
+/* Features*/
+.numbers {
+  background: #3f51b5;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/*About*/
+.about-icon {
+  background: #29ca8e;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.circle {
+  background: rgb(37, 32, 32);
+  border-radius: 100%;
+  text-align: center;
+  padding: 6em;
+  width: 450px;
+  height: 450px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(85, 85, 85);
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.about-right .form-control {
+  background: transparent;
+  border-width: 0px 0px 1px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-left-style: initial;
+  border-color: initial;
+  border-image: initial;
+  border-bottom-style: solid;
+  border-radius: 0px;
+  box-shadow: none;
+  height: 45px;
+  margin: 10px 0px;
+}
+
+.about-right .submit-btn {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  border: 0px;
+  color: rgb(37, 32, 32);
+  width: 50%;
+  height: 50px;
+  margin: 30px auto 10px;
+}
+
+.about-right .submit-btn:hover {
+  background: rgb(63, 81, 181);
+  color: rgb(255, 255, 255);
+}
+
+.form-control::placeholder {
+  color: gray;
+}
+
+/* Teachers */
+
+hr {
+  color: #f0f0f0;
+}
+
+#team,
+#testimonial {
+  background: #f9f9f9;
+}
+
+#contact-form {
+  background: #3f51b5;
+}
+.social-icon {
+  font-size: 16px;
+}
+
+small {
+  font-weight: 300;
+  line-height: 1;
+  color: #777;
+  font-size: 65%;
+}
+
+/* Popular Courses */
+
+.custom-nav {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+.custom-nav button {
+  font-size: 24px;
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+.custom-nav .owl-prev {
+  left: 0;
+}
+.custom-nav .owl-next {
+  right: 0;
+}
+.custom-nav .owl-prev:hover,
+.custom-nav .owl-next:hover {
+  color: #555;
+}
+.owl-dots {
+  display: none;
+}
+.owl-prev,.owl-next{
+  background: #ccadad;
+}
+.owl-prev i ,.owl-next i{
+
+  font-size: 12px;
+}
+div.card-body{
+  background-color: #f8f8f8
+}
+hr{
+  color: #c1b8b8;}
+
+.profile-image{
+  width: 50px;
+  height: 50px;
+}
+.profile-image img {
+  border-radius: 50%;
+ 
+}
+.btn-price,.btn-price:hover{
+  background: #29ca8e;
+  border-radius: 2px;
+  color: #ffffff;
+  display: block;
+  padding: 5px 10px;
+  width: 80px;
+  font-size: 14px;
+}
+#courses .card-title:hover{
+  color: #29ca8e !important;
+
+}
+.owl-prev i,
+.owl-next i {
+  font-size: 12px;
+  background: #D6D6D6;
+  padding: 9px;
+  color: #fff;
+}
+
+.owl-prev i:hover,
+.owl-next i:hover {
+  background: #869791;
+  color: #FFF;
+}
+
+.position-relative.text-white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Siyah arka plan */
+  opacity: 0.1; /* Opaklık seviyesi */
+}
+/* Student Reviews */
+
+/* Contact */
+
+.contact-button {
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: #555;
+  font-size: 14px;
+  height: 50px;
+  width: 100%;
+}
+
+.contact-button:hover {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
 
 @media (min-width: 992px) {
   .carousel-inner {
     height: 650px;
   }
+  .contact-button {
+    width: 170px;
+  }
+
+  .custom-caption {
+    top: 45%;
+  }
 
 }
-
-/* about */
-.col-left {
-  font-family: "Muli", sans-serif;
-}
-
-.col-left h2 {
-  color: #353535;
-  font-weight: 550;
-  font-size: 30px;
-  line-height: 35px;
-}
-
-h4 {
-  color: #353535;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.about-info-group p {
-  color: #757575;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 24px;
-}
-span.icon {
-  background: #29ca8e;
-}
-
-.right-circle {
-  width: 450px;
-  height: 450px;
-  background-color: #252020;
-}
-
-.entry-form .form-ctrl {
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid;
-  border-radius: 0;
-  box-shadow: none;
-  height: 8px;
-  
-}
-
-.form-ctrl {
-  width: 300px;
-  color: #555;
-  padding: 12px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  font-weight: 500;
-  outline: none;
-}
-
-.submit-btn:hover {
-  border: none;
-  background: #3f51b5;
-  color: #ffffff;
-  transition: 0.4s;
-}
-
 
