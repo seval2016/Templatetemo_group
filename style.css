@@ -1,27 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --border: 1px solid #f0f0f0;
+  --btn-border: 1px solid rgb(255, 255, 255);
+  --border-radius:50px;
+  --btn-width:150px;
+  --tittle-color:#454545;
+  --font-size: 14px;
+  --background-color:#f9f9f9;
+  --color:#757575;
+  --green: #29ca8e;
+}
+
 body {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14px;
+  font-family: "Mulish", sans-serif;
 }
 .navbar {
   padding: 0;
 }
 
 p {
-  color: #757575;
-  font-size: 14px;
   font-weight: normal;
   line-height: 24px;
 }
 
+p,span,a,input,.btn{
+  font-size: var(--font-size) !important;
+  color: var(--color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  line-height: inherit;
+  color: var(--tittle-color) !important;
+}
+
 h2 {
-  color: rgb(53, 53, 53);
   font-size: 2em;
   padding-bottom: 10px;
 }
 h3 {
   font-size: 1.5em;
   margin-bottom: 0px;
+}
+
+h3 a {
+  color: var(--tittle-color) !important;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+small {
+    font-weight: 300;
+    line-height: 1;
+    color: #777;
+    font-size: 65%;
+  }
+
+/*Sections general*/
+#team, #testimonial, #courses .card,
+#courses .card-footer {
+  background: var(--background-color);
 }
 
 .navbar-brand {
@@ -64,14 +111,6 @@ h3 {
 
 .carousel-caption h3 {
   font-size: 3rem;
-}
-
-
-@media (min-width: 992px) {
-  .carousel-inner {
-    height: 650px;
-  }
-
 }
 
 /* about */
@@ -137,3 +176,38 @@ span.icon {
 }
 
 
+
+/* Contact Section*/
+
+#contact-form{
+    background-color:#3f51b5;
+}
+
+.contact-button {
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: #555;
+    height: 50px;
+    width: 100%;
+  }
+  
+  .contact-button:hover {
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  @media (min-width: 992px) {
+    .carousel-inner {
+      height: 650px;
+    }
+    .contact-button {
+      width: 170px;
+    }
+  
+    .custom-caption {
+     top: 45%;
+    }
+}
