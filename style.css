@@ -140,10 +140,79 @@ span.icon {
 
 /* FOOTER */
 
-footer .row>div h2{
-  color: white;
+footer{
+  background-color: #252020;
+  padding: 120px 0px;
+}
+
+ footer .row>div h2{
+  color: #ffffff;
   
 }
 
+.social-icon li{
+  display: inline-block;
+  list-style: none;
+  margin: 5px 5px 5px 0px;
+}
 
+.social-icon{
+  padding-left: 0;
+}
 
+footer .social-icon a{
+  color:#29ca8e;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+footer .social-icon a:hover{
+  color:#ffffff;
+  background-color: #29ca8e;
+}
+
+.footer-info a, .footer-menu a{
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer-menu ul li{
+
+  padding-right: 15px;
+}
+
+.footer-info a:hover, .footer-menu a:hover{
+  color:#29ca8e;
+}
+
+.footer-menu ul{
+  list-style-type:none;
+}
+
+footer .row .form-group{
+  color: #757575;
+}
+
+footer form .form-ctrl{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+  border-radius: 0;
+
+}
+
+footer #form-submit{
+  width: 200px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 1rem;
+  margin: 20px 20px 20px 0px;
+  transition: 0.5s;
+
+}
+footer #form-submit:hover{
+  background-color:#29ca8e;
+}
